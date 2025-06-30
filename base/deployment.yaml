@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tesco-checklist
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tesco-checklist
+  template:
+    metadata:
+      labels:
+        app: tesco-checklist
+    spec:
+      imagePullSecrets:
+        - name: dockerhub-secret
+      containers:
+      - name: analyzer
+        image: mhefner1983/tesco-checklist:arm64
+        ports:
+        - containerPort: 80
