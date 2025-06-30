@@ -7,5 +7,5 @@ spec:
     spec:
       containers:
         - name: analyzer
-          image: mhefner1983/tesco-checklist:dev  # tag it differently for dev
+          image: mhefner1983/tesco-checklist:arm64  # tag it differently for dev
           imagePullPolicy: Always
