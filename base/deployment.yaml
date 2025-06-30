@@ -15,7 +15,7 @@ spec:
       imagePullSecrets:
         - name: dockerhub-secret
       containers:
-      - name: analyzer
+      - name: tesco-checklist
         image: mhefner1983/tesco-checklist:arm64
         ports:
-        - containerPort: 80
+        - containerPort: 5000
