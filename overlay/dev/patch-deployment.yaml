@@ -6,6 +6,6 @@ spec:
   template:
     spec:
       containers:
-        - name: analyzer
+        - name: tesco-checklist
           image: mhefner1983/tesco-checklist:arm64  # tag it differently for dev
           imagePullPolicy: Always
