@@ -1,0 +1,11 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tesco-checklist
+spec:
+  template:
+    spec:
+      containers:
+        - name: analyzer
+          image: mhefner1983/tesco-checklist:dev  # tag it differently for dev
+          imagePullPolicy: Always
