@@ -8,5 +8,5 @@ spec:
     app: tesco-checklist
   ports:
     - port: 80
-      targetPort: 80
+      targetPort: 5000
       nodePort: 30083  # You can pick any free port between 30000–32767
